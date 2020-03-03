@@ -37,7 +37,7 @@ public class Main extends Application {
             //Correct the points onto the circle
             correctPoint(i);
             angles[i].setX(points[i].getCenterX() + 10);
-            angles[i].setY(points[i].getCenterY() + 10);
+            angles[i].setY(points[i].getCenterY());
             points[i].setOnMouseDragged(new PointDragHandler(i)); //The event handler
             points[i].setStroke(Color.BLACK);
             points[i].setFill(Color.RED);
@@ -67,7 +67,7 @@ public class Main extends Application {
             points[i].setCenterY(event.getY());
             correctPoint(i);
             angles[i].setX(points[i].getCenterX() + 10);
-            angles[i].setY(points[i].getCenterY() + 10);
+            angles[i].setY(points[i].getCenterY());
             drawCanvas(gc);
         }
     }
