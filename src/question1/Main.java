@@ -1,3 +1,6 @@
+//Connor Mahon
+//100702878
+
 package question1;
 
 import javafx.application.Application;
@@ -28,11 +31,7 @@ public class Main extends Application {
             cards[i] = newCard;
         }
 
-        //Some debug output
-        //for (int i = 0; i < 3; i++) {
-        //    System.out.println(cards[i]);
-        //}
-
+        //setting up hbox
         Pane pane = new HBox(10);
         pane.setPadding(new Insets(5,5,5,5));
 
@@ -49,9 +48,9 @@ public class Main extends Application {
                 .getResourceAsStream("cards/" + String.valueOf(cards[2]) + ".png")));
         card2.setFitHeight(153);
         card2.setFitWidth(100);
-
-        //Setup and display pane and stage
+        //add the images to the pane
         pane.getChildren().addAll(card0, card1, card2);
+        //Setup and display pane and stage
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Cards");
