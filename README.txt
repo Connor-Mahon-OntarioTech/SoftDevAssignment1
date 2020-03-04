@@ -1,3 +1,6 @@
+PROJECT GITHUB LINK:
+https://github.com/Connor-Mahon-OntarioTech/SoftDevAssignment1.git
+
 HOW TO DOWNLOAD AND RUN THIS PROJECT
 
 1. Clone the repository using "git clone https://github.com/Connor-Mahon-OntarioTech/SoftDevAssignment1.git" to a directory of your choice
